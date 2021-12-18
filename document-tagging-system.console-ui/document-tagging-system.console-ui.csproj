@@ -5,4 +5,8 @@
     <RootNamespace>document_tagging_system.console_ui</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\document-tagging-system\document-tagging-system.csproj" />
+  </ItemGroup>
+
 </Project>

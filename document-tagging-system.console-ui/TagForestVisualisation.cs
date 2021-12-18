@@ -7,6 +7,11 @@ namespace document_tagging_system.console_ui
     {
         private readonly IEnumerable<ITagBranch> _roots;
 
+        public TagForestVisualisation(IEnumerable<ITagBranch> roots)
+        {
+            _roots = roots;
+        }
+
         public void Show()
         {
             foreach (var root in _roots)
