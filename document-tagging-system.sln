@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "document-tagging-system", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "document-tagging-system.console-ui", "document-tagging-system.console-ui\document-tagging-system.console-ui.csproj", "{605778CB-B975-4176-9A68-B56D4415A074}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A6F48598-BEC8-4FFC-90B7-5C0C9D904CB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "functional", "functional", "{E472292C-DA66-4DBC-9F47-A04110BA5D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tag-forest-display", "tag-forest-display\tag-forest-display.csproj", "{6CEF8F73-2C35-4F4F-92CF-4A944F433861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,17 @@ Global
 		{605778CB-B975-4176-9A68-B56D4415A074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605778CB-B975-4176-9A68-B56D4415A074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{605778CB-B975-4176-9A68-B56D4415A074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEF8F73-2C35-4F4F-92CF-4A944F433861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEF8F73-2C35-4F4F-92CF-4A944F433861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEF8F73-2C35-4F4F-92CF-4A944F433861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEF8F73-2C35-4F4F-92CF-4A944F433861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E472292C-DA66-4DBC-9F47-A04110BA5D1F} = {A6F48598-BEC8-4FFC-90B7-5C0C9D904CB2}
+		{6CEF8F73-2C35-4F4F-92CF-4A944F433861} = {E472292C-DA66-4DBC-9F47-A04110BA5D1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFE5DA58-D68C-40D8-81EB-52B803E3C68D}
