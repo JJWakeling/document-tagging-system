@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>document_tagging_system.console_ui</RootNamespace>
+  </PropertyGroup>
+
+</Project>
