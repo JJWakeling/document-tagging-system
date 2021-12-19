@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace document_tagging_system
 {
@@ -7,28 +8,29 @@ namespace document_tagging_system
     /// </summary>
     public class RootTag : ITag
     {
-        private readonly ITagStore _store;
-        private readonly string _text;
+        private readonly IPrimitiveTag _primitive;
 
-        public RootTag(ITagStore tagStore, string text)
+        public RootTag(IPrimitiveTag primitive)
         {
-            _store = tagStore;
-            _text = text;
+            _primitive = primitive;
         }
 
         public IEnumerable<ITag> Children()
         {
-            return _store.Children(this);
+            return _primitive.Children()
+                .Select(c =>
+                    new ChildTag(this, c)
+                );
         }
 
         public string FullText()
         {
-            return _text;
+            return _primitive.Text();
         }
 
         public string Text()
         {
-            return _text;
+            return _primitive.Text();
         }
     }
 }
